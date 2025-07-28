@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to right, #e6f9ff, #f0fff0);
+  color: #333;
+}
+
+header {
+  background: #00b8b8;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#hero {
+  background: url('https://source.unsplash.com/1600x700/?yoga,morning') no-repeat center center/cover;
+  padding: 6rem 1rem;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+#hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 0;
+}
+
+#hero h2,
+#hero p,
+#hero .btn {
+  position: relative;
+  z-index: 1;
+}
+
+#hero h2 {
+  font-size: 2.5rem;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #009688;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #00796b;
+}
+
+section {
+  padding: 3rem 1.5rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #009688;
+}
+
+.subheading {
+  font-size: 1rem;
+  color: #555;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.legend {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.legend .dot {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  margin: 0 5px;
+  color: white;
+  font-size: 0.85rem;
+}
+
+.vishal { background: green; }
+.puja { background: orange; }
+.jyoti { background: brown; }
+.sanjana { background: purple; }
+
+.schedule-table {
+  display: grid;
+  gap: 2rem;
+}
+
+.day {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.day h3 {
+  color: #4caf50;
+  margin-bottom: 1rem;
+}
+
+.class {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.time {
+  font-weight: bold;
+  color: #009688;
+  min-width: 90px;
+}
+
+.instructors {
+  font-size: 1rem;
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact a {
+  color: #009688;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  background: #004d4d;
+  color: white;
+  padding: 1rem;
+}
+#home {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+#home .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 70, 55, 0.6); /* dark green overlay for readability */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+
+#home .home-content {
+  max-width: 700px;
+  z-index: 10;
+}
+
+#home h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+#home p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+#home .btn {
+  display: inline-block;
+  background-color: #00a676;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+#home .btn:hover {
+  background-color: #007a53;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+}
